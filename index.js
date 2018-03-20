@@ -1,4 +1,5 @@
 var katzDeli = []
+var index = 1
 
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name)
@@ -19,7 +20,8 @@ function currentLine(katzDeliLine) {
   if (katzDeliLine[0]) {
     var str = `The line is currently:`
     for(i = 0; i < katzDeliLine.length; i++) {
-      str = str + ' ' + (i+1) + ". " + katzDeliLine[i]
+      //str = str + ' ' + (i+1) + ". " + katzDeliLine[i]
+      str = `${str} ${i+1}. ${katzDeliline[i]}`
       if (i !== katzDeliLine.length-1) {
         str = str + `,`
       }
