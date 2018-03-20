@@ -1,9 +1,10 @@
 var katzDeli = []
-var index = 1
+var index = 0
 
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name)
-  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
+  index = index + 1
+  return `Welcome, ${name}. You are number ${index} in line.`
 }
 
 function nowServing(katzDeliLine) {
